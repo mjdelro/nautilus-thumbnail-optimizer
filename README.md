@@ -1,9 +1,9 @@
-# Nautilus Thumbnail Optimizer for Fedora
+# Nautilus thumbnail optimizer for Fedora
 
 Nautilus can become sluggish or unresponsive in directories containing thousands of videos. Two common causes are:
 
-- `gst-video-thumbnailer` hanging indefinitely on an otherwise readable video;
-- GNOME's default 512 MiB thumbnail cache repeatedly evicting and rebuilding previews.
+- `gst-video-thumbnailer` hanging indefinitely on an otherwise readable video
+- GNOME's default 512 MiB thumbnail cache repeatedly evicting and rebuilding previews
 
 This installer redirects GNOME video-thumbnail requests to `ffmpegthumbnailer`, raises the global thumbnail-cache limit to 2 GiB, and retains thumbnails for ten years by default.
 
